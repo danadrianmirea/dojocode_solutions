@@ -21,3 +21,6 @@ def merge_sorted_lists(list1: list[int], list2: list[int]) -> list[int]:
         merged_list.extend(list2[j:])
     
     return merged_list
+
+a = merge_sorted_lists([1, 5, 9],[2, 3, 8, 11])
+print(a)
