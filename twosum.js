@@ -9,8 +9,29 @@ function twoSum(nums, target)
   }
 }
 
+function twoSumOptimal(nums, target)
+{
+    const numToIndex = {};
+
+    for(var i=0; i<nums.length; i++)
+    {
+        const num = nums[i];
+        const complement = target - num;
+
+        if(complement in numToIndex)
+        {
+            return [numToIndex[complement], i];
+        }
+
+        numToIndex[num] = i;
+    }
+
+    return [];
+}
+
 module.exports = {
   twoSum
 };
 
 console.log(twoSum([3, 3], 6));
+console.log(twoSumOptimal([3, 3], 6));
