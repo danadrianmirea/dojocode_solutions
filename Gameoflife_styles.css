@@ -1,0 +1,66 @@
+button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  transition:
+    box-shadow 0.2s ease 0s,
+    -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s,
+    transform 0.1s ease 0s;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: #fff;
+}
+
+button:hover {
+  border-color: #000000;
+}
+
+body,
+h1,
+h2,
+p,
+button {
+  font-family: "Sofia", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: max-content;
+  max-width: 100%;
+}
+main canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+.gameplay-buttons,
+.example-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  max-width: 100%;
+  margin: 20px auto 0 auto;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  button {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+}
