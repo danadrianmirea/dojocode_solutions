@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of life</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia" />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <h1>Game of life</h1>
+      </header>
+      <main></main>
+      <span class="gameplay-buttons"></span>
+      <section>
+        <h2>Some interesting examples</h2>
+        <div class="example-buttons"></div>
+
+        <div id="article">
+          <h2>Rules</h2>
+          <p>For a cell that is populated:</p>
+          <ol>
+            <li>
+              <p>Each cell with one or no neighbors dies, as if by solitude.</p>
+            </li>
+            <li>
+              <p>
+                Each cell with four or more neighbors dies, as if by
+                overpopulation.
+              </p>
+            </li>
+            <li><p>Each cell with two or three neighbors survives.</p></li>
+          </ol>
+          <p>For a cell that is unpopulated or empty:</p>
+          <ol>
+            <li>
+              <p>Each cell with exactly three neighbors becomes populated.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </div>
+    <script src="/index.js" />
+  </body>
+</html>
